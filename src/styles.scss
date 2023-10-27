@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+ul li {
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(110deg, #000 -3.35%, #0500FF 368.6%);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  font-family: Poppins, sans-serif;
+}
+
+.btn {
+  color: white;
+  border-radius: 40px;
+  border: 1px solid #FFF;
+  padding: 20px 40px;
+}

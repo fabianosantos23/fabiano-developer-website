@@ -1,0 +1,27 @@
+h1 {
+  color: #FCFCFC;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#home h2 {
+  color: #FCFCFC;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 400;
+}
+
+#home p {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 703px;
+}
