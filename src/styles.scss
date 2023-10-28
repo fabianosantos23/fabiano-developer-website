@@ -7,17 +7,21 @@ ul li {
   list-style: none;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
+}
+
 body {
   background: linear-gradient(110deg, #000 -3.35%, #0500FF 368.6%);
   background-repeat: no-repeat;
   min-height: 100vh;
   color: white;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn {
   color: white;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   border: 1px solid #FFF;
-  padding: 20px 40px;
+  padding: 1.25rem 2.5rem;
 }

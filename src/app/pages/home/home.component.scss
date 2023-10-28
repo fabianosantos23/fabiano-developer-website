@@ -1,27 +1,118 @@
 h1 {
   color: #FCFCFC;
   text-align: center;
-  font-size: 64px;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
 }
 
 #home {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 7.5rem);
 }
 
 #home h2 {
   color: #FCFCFC;
   text-align: center;
-  font-size: 80px;
-  font-weight: 400;
+  font-size: 5rem;
+  font-weight: 300;
 }
 
 #home p {
   color: #FFF;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
-  max-width: 703px;
+  max-width: 43.9375rem;
+  margin-bottom: 2.5rem;
+}
+
+#projects {
+  padding: 7.5rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#projects .project-wrapper {
+  border-radius: 3.125rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects .project-col-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5.125rem;
+  padding-top: 1rem;
+}
+
+#projects .project-col-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10rem;
+}
+
+
+#projects .auditore {
+  width: 37.75rem;
+  height: 40.4375rem;
+  background: #000;
+}
+
+#projects .takeback {
+  width: 31.25rem;
+  height: 31.25rem;
+  background: #76A4FD;
+}
+
+#projects .byd {
+  width: 31.5rem;
+  height: 48.25rem;
+  background: #FFF;
+}
+
+#projects .project-wrapper img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#projects .auditore img {
+  top: 50%;
+  left: 50%;
+}
+
+#projects .takeback img {
+  top: 50%;
+  left: 50%;
+}
+
+#projects .byd img {
+  top: 50%;
+  left: 50%;
+}
+
+#projects .texts {
+  width: 450px;
+}
+
+#projects .texts h2 {
+  color: #FCFCFC;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: normal;
+}
+
+#projects .texts p {
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1.25rem;
 }
