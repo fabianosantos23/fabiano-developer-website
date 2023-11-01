@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContentComponent } from './shared/layout/content/content.component';
+import { ContentComponent } from './shared/components/layout/content/content.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ProjectComponent } from './pages/project/project.component';
 
 const routes: Routes = [
   {
@@ -9,7 +10,9 @@ const routes: Routes = [
     component: ContentComponent,
     children: [
       { path: 'home', component: HomeComponent },
+      { path: 'project/:id', component: ProjectComponent },
       { path: '', redirectTo: '/home', pathMatch: 'full' },
+      { path: '**', redirectTo: '/home' },
     ],
   },
 

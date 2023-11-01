@@ -1,0 +1,126 @@
+.banner {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    color: #FCFCFC;
+    font-size: 8.875rem;
+    font-weight: 400;
+    text-shadow: 10px 4px 13px rgba(0, 0, 0, 0.40);
+  }
+}
+
+.content {
+  margin-inline: 5rem;
+  p {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 200%;
+    width: 47rem;
+  }
+  .description {
+    margin: 12.5rem 5rem 15.625rem 5rem;
+    h3 {
+      color: #FFF;
+      font-size: 4rem;
+      font-weight: 600;
+      text-align: end;
+      margin-bottom: 5rem;
+    }
+  }
+  .big-mockup {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5.625rem;
+  }
+}
+
+#byd-energia {
+  background: linear-gradient(85deg, #C50B0B 4.49%, #0500FF 299.01%);
+}
+
+#takeback {
+  background: linear-gradient(172deg, #0084EC 5.26%, #FFF 174.36%);
+}
+
+#auditore {
+  background: linear-gradient(91deg, #000 9.96%, #0804CA 453.87%);
+}
+
+
+.grid-project {
+  padding-block: 7.5rem 30rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5.375rem;
+  p {
+    width: 36rem;
+  }
+}
+
+.grid-project .project-wrapper {
+  border-radius: 3.125rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-project .project-col-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5rem;
+  padding-top: 1rem;
+}
+
+.grid-project .project-col-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6.875rem;
+}
+
+.grid-project .mockup-1 {
+  width: 33rem;
+  height: 37.6875rem;
+}
+
+.grid-project .mockup-2 {
+  width: 33rem;
+  height: 37.6875rem;
+}
+
+.grid-project .mockup-3 {
+  width: 33rem;
+  height: 37.6875rem;
+}
+
+.grid-project .project-wrapper img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.grid-project .mockup-1 img {
+  top: 50%;
+  left: 50%;
+}
+
+.grid-project .mockup-2 img {
+  top: 50%;
+  left: 50%;
+}
+
+.grid-project .mockup-3 img {
+  top: 50%;
+  left: 50%;
+}
+
+

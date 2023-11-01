@@ -12,6 +12,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   height: calc(100vh - 7.5rem);
+  margin-top: 5rem;
 }
 
 #home h2 {
@@ -123,4 +124,8 @@ h1 {
 
 #contact {
   padding-block: 6.4375rem 3.75rem;
+}
+
+img {
+  cursor: pointer;
 }
