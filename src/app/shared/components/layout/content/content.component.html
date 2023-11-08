@@ -1,5 +1,10 @@
-<app-header></app-header>
-<main class="page-wrapper">
-  <router-outlet></router-outlet>
-</main>
-<app-footer></app-footer>
+<ng-container *ngIf="store$ | async as store">
+  <div [ngClass]="{ 'loading-screen': store.isLoading }"></div>
+  <div [ngClass]="{ loading: store.isLoading }">
+    <app-header></app-header>
+    <main class="page-wrapper">
+      <router-outlet></router-outlet>
+    </main>
+    <app-footer></app-footer>
+  </div>
+</ng-container>

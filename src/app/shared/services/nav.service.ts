@@ -9,6 +9,7 @@ export class NavService {
 
   constructor(
     private router: Router,
+    private viewportScroller: ViewportScroller
   ) {}
 
   scrollToElement(elementId: string): void {
@@ -33,6 +34,7 @@ export class NavService {
       }, 100);
       return
     }
+    this.viewportScroller.scrollToPosition([0, 0])
     const params = id ? [`/${page}`, id] : [`/${page}`]
     await this.router.navigate(params)
   }

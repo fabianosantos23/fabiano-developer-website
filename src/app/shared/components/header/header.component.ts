@@ -14,7 +14,6 @@ export class HeaderComponent {
   constructor(
     private navService: NavService,
     private router: Router,
-    private viewportScroller: ViewportScroller,
     private elementRef: ElementRef
   ) {}
 

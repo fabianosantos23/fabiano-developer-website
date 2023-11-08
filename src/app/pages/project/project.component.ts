@@ -16,15 +16,11 @@ export class ProjectComponent implements OnInit {
   constructor(
     private projectService: ProjectService,
     private route: ActivatedRoute,
-    private viewportScroller: ViewportScroller
     ){}
 
   ngOnInit(): void {
     this.projectId = this.route.snapshot.paramMap.get('id')!;
     this.projects = this.projectService.getProjects(this.projectId)
-    setTimeout(() => {
-      this.viewportScroller.scrollToPosition([0, 0])
-    }, 500);
   }
 
 }

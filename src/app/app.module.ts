@@ -7,6 +7,15 @@ import { ContentComponent } from './shared/components/layout/content/content.com
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
+import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
+import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin'
+import { NgxsModule } from '@ngxs/store';
+import { StoreMetaState } from 'src/store/store.meta.state';
+import { environment } from 'src/environment/environment';
+import { registerLocaleData } from '@angular/common';
+import ptBr from '@angular/common/locales/pt';
+
+registerLocaleData(ptBr);
 
 @NgModule({
   declarations: [
@@ -18,7 +27,14 @@ import { PagesModule } from './pages/pages.module';
     AppRoutingModule,
     NgbModule,
     SharedModule,
-    PagesModule
+    PagesModule,
+    NgxsLoggerPluginModule.forRoot({
+      disabled: environment.production,
+    }),
+    NgxsModule.forRoot([
+      StoreMetaState
+    ]),
+    NgxsReduxDevtoolsPluginModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
